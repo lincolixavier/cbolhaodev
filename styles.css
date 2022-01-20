@@ -1,0 +1,104 @@
+/* RESET */
+*,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url("./images/bg.png") no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+}
+
+/*  HEADER */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+header .logo,
+header h3 {
+  width: 100%;
+  text-align: center;
+}
+
+/* MAIN  CONTENT */
+.wrapper-content {
+  margin-top: 30px;
+}
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 900px;
+  width: 90%;
+  margin: 20px auto;
+}
+.block-content {
+  width: 31%;
+  border-top: 1px solid #ffa810;
+  padding: 10px;
+  text-align: center;
+}
+.title {
+  font-size: 28px;
+  color: #ffa810;
+  margin: 10px 0;
+}
+.block-content .description {
+  font-size: 18px;
+  font-weight: normal;
+}
+.channels {
+  margin-top: 20px;
+}
+.channels .channel {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.channels .channel img {
+  margin-right: 10px;
+}
+.channels .channel a {
+  color: aliceblue;
+  padding: 3px;
+  transition: all 0.2s ease-in;
+}
+.channels .channel a:hover {
+  background-color: rgb(1, 11, 20);
+}
+
+.teams {
+  margin-top: 20px;
+}
+
+.sponsors {
+  width: 100%;
+  text-align: center;
+}
+.sponsors {
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid #ffa810;
+}
+.sponsors-list li {
+  margin: 15px;
+  display: inline-block;
+}
