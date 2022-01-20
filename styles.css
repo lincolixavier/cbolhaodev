@@ -114,15 +114,7 @@ header h3 {
 .sponsors-list li {
   margin: 15px;
   display: inline-block;
-
-  opacity: 0;
-  transform: translateY(-90%);
-  animation-name: down;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-  animation-play-state: initial;
 }
-
 
 /* ANIMATION */
 
@@ -132,12 +124,6 @@ header h3 {
    transform: translateX(0);
   }
 }
-@keyframes down {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-   }
- }
 
 /* RESPONSIVE */
 
