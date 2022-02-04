@@ -83,16 +83,26 @@ header a {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1041px) {
   body {
     overflow-y: auto;
+    background-position: -108px 1px;
     overflow-x: hidden;
   }
 
-  header .logo,
+  header .logo {
+    width: 80%;
+  }
+  header .logo img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-position: -188px 1px;
+  }
   header h3 {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
+    padding: 0 50px;
   }
 }
