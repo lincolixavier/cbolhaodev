@@ -17,15 +17,7 @@ a {
 body {
   background: url("./images/bg.jpeg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
-  color: white;
-  font-family: "Outfit", sans-serif;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "Mukta", sans-serif;
 }
 
 /*  HEADER */
@@ -36,6 +28,7 @@ header {
   width: 100%;
   position: relative;
   align-items: center;
+  margin-top: 7.875rem;
 }
 
 header .logo,
@@ -54,23 +47,68 @@ header h3 {
   color: #883116;
 }
 
-header a {
-  font-size: 1.063rem;
-  color: #fff;
-  background-color: #883116;
-  border: 0.063rem solid #883116;
-  border-radius: 0.438rem;
-  padding: 0.938rem 1.875rem;
-  margin: 1.875rem 0.938rem;
+.sponsors {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.sponsors-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.sponsors-list a {
+  margin: 10px;
 }
 /* MAIN  CONTENT */
-.wrapper-content {
-  margin-top: 1.875rem;
+.main-content {
+  margin: 1.875rem auto;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.block-content {
+  width: fit-content;
+  margin: 20px;
+}
+.block-content .description {
+  font-size: 1.3rem;
+  color: #583538;
+  font-style: oblique;
+}
+.block-content li small {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #9c560f;
+}
+.block-content li .link {
+  background: #b9742e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 3px 5px;
+  display: inline-block;
+}
+
+.prizes {
+  display: flex;
+}
+.prize {
+  margin-top: 4.12rem;
+  margin-left: 2rem;
+}
+.channel figure {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
 }
 
 .title {
   font-size: 1.75rem;
-  color: #ffa810;
+  color: #7e5104;
   margin: 0.625rem 0;
 }
 
@@ -84,18 +122,28 @@ header a {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1041px) {
-  body {
-    overflow-y: auto;
-    background-position: -108px 1px;
-    overflow-x: hidden;
-  }
-
+@media screen and (max-width: 1093px) {
   header .logo {
     width: 80%;
   }
   header .logo img {
     max-width: 100%;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .block-content,
+  .block {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .prize {
+    margin-top: 0;
+  }
+  figure {
+    margin: auto;
   }
 }
 
