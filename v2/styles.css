@@ -1,0 +1,157 @@
+/* RESET */
+*,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+  margin-bottom: 0.313rem;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url("./images/bg.jpeg") no-repeat;
+  background-size: cover;
+  font-family: "Mukta", sans-serif;
+}
+
+/*  HEADER */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  margin-top: 7.875rem;
+}
+
+header .logo,
+header h3 {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+header h3 {
+  font-size: 1.5rem;
+  color: #883116;
+}
+
+.sponsors {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.sponsors-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.sponsors-list a {
+  margin: 10px;
+}
+/* MAIN  CONTENT */
+.main-content {
+  margin: 1.875rem auto;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.block-content {
+  width: fit-content;
+  margin: 20px;
+}
+.block-content .description {
+  font-size: 1.3rem;
+  color: #583538;
+  font-style: oblique;
+}
+.block-content li small {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #9c560f;
+}
+.block-content li .link {
+  background: #b9742e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 3px 5px;
+  display: inline-block;
+}
+
+.prizes {
+  display: flex;
+}
+.prize {
+  margin-top: 4.12rem;
+  margin-left: 2rem;
+}
+.channel figure {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: #7e5104;
+  margin: 0.625rem 0;
+}
+
+/* ANIMATION */
+
+@keyframes slide {
+  to {
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1093px) {
+  header .logo {
+    width: 80%;
+  }
+  header .logo img {
+    max-width: 100%;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .block-content,
+  .block {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .prize {
+    margin-top: 0;
+  }
+  figure {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-position: -188px 1px;
+  }
+  header h3 {
+    padding: 0 3.125rem;
+  }
+}
